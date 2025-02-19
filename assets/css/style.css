@@ -1,4 +1,103 @@
-*{
-  padding:0;
-  margin:0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#sidebar {
+width: 200px;
+height: 500px;
+background: darkgrey;
+} 
+header {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.winkelwagen {
+  position: relative;
+}
+
+.producten-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  height: 400px;
+}
+
+.product-kaart {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-afbeelding {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.product-titel {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.product-prijs {
+  color: #6b2ecc;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.koop-knop {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
