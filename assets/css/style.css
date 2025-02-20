@@ -66,9 +66,10 @@ nav {
 }
 
 .product-afbeelding {
-  width: 100%;
+  width: 110%;
   height: 300px;
   object-fit: cover;
+  border-radius: 5px;
   margin-bottom: 1rem;
 }
 
