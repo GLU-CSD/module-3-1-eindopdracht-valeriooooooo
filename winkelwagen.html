@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bestelformulier</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #ffffff;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                max-width: 400px;
+                background: rgb(255, 255, 255);
+                padding: 20px;
+                margin: auto;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+            input, select {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #000000;
+                border-radius: 4px;
+            }
+            .submit-btn {
+                margin-top: 20px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 4px;
+            }
+            .submit-btn:hover {
+                background-color: #218838;
+            }
+        </style>
+    </head>
+
+    <body>
+      <div class="container">
+          <h2>Bestelformulier</h2>
+          <form action="#" method="post">
+              <label for="aanhef">Aanhef:</label>
+              <select id="aanhef" name="aanhef" required>
+                  <option value="Dhr">De heer</option>
+                  <option value="Mevr">Mevrouw</option>
+              </select>
+
+              <label for="voornaam">Voornaam:</label>
+              <input type="text" id="voornaam" name="voornaam" required>
+
+              <label for="tussenvoegsel">Tussenvoegsel:</label>
+              <input type="text" id="tussenvoegsel" name="tussenvoegsel">
+
+              <label for="achternaam">Achternaam:</label>
+              <input type="text" id="achternaam" name="achternaam" required>
+
+              <label for="straatnaam">Straatnaam:</label>
+              <input type="text" id="straatnaam" name="straatnaam" required>
+
+              <label for="huisnummer">Huisnummer:</label>
+              <input type="number" id="huisnummer" name="huisnummer" required>
+
+              <label for="postcode">Postcode:</label>
+              <input type="text" id="postcode" name="postcode" required>
+
+              <label for="land">Land:</label>
+              <input type="text" id="land" name="land" required>
+
+              <label for="email">E-mailadres:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="telefoon">Telefoonnummer:</label>
+              <input type="tel" id="telefoon" name="telefoon" required>
+
+              <label for="geboortedatum">Geboortedatum:</label>
+              <input type="date" id="geboortedatum" name="geboortedatum" required>
+<label>
+                  <input type="checkbox" name="voorwaarden" required> Ik ga akkoord met de algemene voorwaarden
+              </label>
+
+              <button type="submit" class="submit-btn">Bestelling plaatsen</button>
+          </form>
+      </div>
+  </body>
+  </html>

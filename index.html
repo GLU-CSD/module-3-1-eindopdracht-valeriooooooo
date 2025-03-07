@@ -10,21 +10,79 @@
 <body>
     <header>
         <nav>
-           <div class="logo">Souls Collector</div>
-           <img src="Dark Souls Bonfire.ico" alt="Logo" class="logo-afbeelding">
+           <div class="logo"><img src="Dark Souls Bonfire.ico" alt="Logo" class="logo-afbeelding">Souls Collector</div>
+   
             <div class="menu">
                 <a href="#">Home</a>
                 <a href="#">Products</a>
                 <a href="#">About Us</a>
                 <a href="#">Contact</a>
-                <a href="#" class="winkelwagen">🛒</a>
+                <li><a href="winkelwagen.html" class="winkelwagen">🛒</a></li>
+                <div id = "zoekbalk">Searchbar:
+                    <input type ="text" id="zoekbalk" placeholder="search..."> 
+                </div>
             </div>
-        </nav>
-        <div id = "zoekbalk">Searchbar:
-            <input type ="text" id="zoekbalk" placeholder="search..."> 
+
+
+            <!-- <nav>
+                <div class="logo">Mijn Logo</div>
+                
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Producten</a>
+                    <a href="#">Over Ons</a>
+                    <a href="#">Contact</a>
+                    <div class="zoek-winkelwagen-container">
+                        <div class="winkelwagen">
+                            <li><a href="winkelwagen.html" class="winkelwagen">🛒</a></li>
+                        </div>
+                        <input type="text" class="zoekbalk" placeholder="Zoek...">
+                </div>
+            </nav>
+            
+        </nav> -->
+
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-darkgrey" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+
+            <div class="filter-option">
+                <h3>Prijsrange:</h3>
+                <label for="priceRange">Prijs: €<span id="minPrice">7.999</span> - €<span id="maxPrice">79.999</span></label>
+                <input type="range" id="priceSlider" min="7.999" max="79.999" value="100" step="1">
+              </div>
+
+              <script>
+                function w3_open() {
+                  document.getElementById("mySidebar").style.display = "block";
+                }
+    
+                function w3_close() {
+                  document.getElementById("mySidebar").style.display = "none";
+                }
+                </script>
+
+    </header>   
+    <div id="sidebar">
+        <div class="filter-option">
+            <h3>Categorieën:</h3>
+            <label><input type="checkbox" class="category-filter" value="sport"> Elden Ring</label><br>
+            <label><input type="checkbox" class="catagory-filter" value="comfort"> Dark Souls III</label><br>
+            <label><input type="checkbox" class="catagory-filter" value="casual"> Dark Souls II</label><br>
+            <label><input type="checkbox" class="catagory-filter" value="casual"> Dark Souls I</label><br>
+            <label><input type="checkbox" class="catagory-filter" value="casual"> Demon Souls</label><br>
         </div>
-    </header>
-    <div id="sidebar">sidebar</div>
+
+
+        <h2>Filter op prijs</h2>
+        <label for="min-price">Min:</label>
+        <input type="number" id="min-price" placeholder="€0">
+        <label for="max-price">Max:</label>
+        <input type="number" id="max-price" placeholder="€100">
+        <button onclick="filterByPrice()">Filter</button>
+
+
+        
+    </div>
  
 
     <main class="container">
@@ -155,5 +213,18 @@
     <footer>
         <p>© 2025 Mijn Webshop. Alle rechten voorbehouden.</p>
     </footer>
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const priceSlider = document.getElementById("priceSlider");
+          const maxPrice = document.getElementById("maxPrice");
+      
+          priceSlider.addEventListener("input", function () {
+              maxPrice.textContent = priceSlider.value;
+          });
+      });
+      
+      </script>
+
 </body>
 </html>
