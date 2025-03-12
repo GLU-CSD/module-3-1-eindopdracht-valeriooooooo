@@ -9,40 +9,34 @@
 </head>
 <body>
     <header>
-        <nav>
-           <div class="logo"><img src="Dark Souls Bonfire.ico" alt="Logo" class="logo-afbeelding">Souls Collector</div>
-   
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-                <div class="zoek-winkelwagen-container">
-                <li><a href="winkelwagen.html" class="winkelwagen">🛒</a></li></div>
-                <div id = "zoekbalk">Searchbar:
-                    <input type ="text" id="zoekbalk" placeholder="search..."> 
-                </div>
-            </div>
 
-<div> </div>
-            <!-- <nav>
-                <div class="logo">Mijn Logo</div>
-                
-                <div class="menu">
-                    <a href="#">Home</a>
-                    <a href="#">Producten</a>
-                    <a href="#">Over Ons</a>
-                    <a href="#">Contact</a>
-                    <div class="zoek-winkelwagen-container">
-                        <div class="winkelwagen">
-                            <li><a href="winkelwagen.html" class="winkelwagen">🛒</a></li>
-                        </div>
-                        <input type="text" class="zoekbalk" placeholder="Zoek...">
-                </div>
-            </nav>
-            
-        </nav> -->
+    </header>
 
+
+
+
+    <header>
+
+        <div id="leftHeader">
+          <div id="landselectie"><select>
+              <option>Nederlands</option>
+            </select></div>
+          <div><nav>
+            <a href="home">Home</a>
+            <a href="Products">Products</a>
+            <a href="About Us">About Us</a>
+          </nav></div>
+        </div>
+      
+        <div id="middenHeader">
+          <div id="logo">logo</div>
+          <div>Souls Collector</div>
+        </div>
+      
+        <div id="rightHeader">
+          <div><input type=text /></div>
+          <div id="winkelwagen">🛒</div>
+        </div>
         <div class="w3-sidebar w3-bar-block w3-border-right w3-darkgrey" style="display:none" id="mySidebar">
             <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
 
@@ -61,6 +55,8 @@
                   document.getElementById("mySidebar").style.display = "none";
                 }
                 </script>
+
+                </div>
 
     </header>   
     <div id="sidebar">
