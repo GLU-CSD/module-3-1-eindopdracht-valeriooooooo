@@ -4,7 +4,53 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bestelformulier</title>
+
+        <header>
+
+            <div id="leftHeader">
+              <div id="landselectie"><select>
+                  <option>Nederlands</option>
+                    <option>English</option>
+                </select></div>
+              <div><nav>
+                <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="Products">Products</a>
+                <a href="About Us">About Us</a>
+            </div>
+              </nav></div>
+            </div>
+          
+            <div id="middenHeader">
+                <div class="logo"><img src="Dark Souls Bonfire.ico" alt="Logo" class="logo-afbeelding">Souls Collector </div>
+            </div>
+        </header>    
+
         <style>
+            header{
+  background: #333;
+  display:flex;
+  justify-content: space-between;
+}
+#middenHeader, #rightHeader{
+  background: #333;
+  display:flex;
+  align-items: center;
+  margin:10px;
+}
+#leftHeader{
+  background: #333;
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin:10px;
+}
+
+
+            
             body {
                 font-family: Arial, sans-serif;
                 background-color: #ffffff;
